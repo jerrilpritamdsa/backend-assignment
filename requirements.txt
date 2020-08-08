@@ -6,3 +6,4 @@ ipdb
 python-decouple
 whitenoise
 dj-database-url
+gunicorn
