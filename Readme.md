@@ -85,7 +85,61 @@ This populates the database with 50 **User** objects and 3 corresponding **Activ
 
 ## API Endpoints
 
-* https://www.website.com/list_paginated_users/
+* https://list-user-assignment.herokuapp.com/list_all_users/
+This endpoint provides a json response with the list of all users as the problem statement expects
+```
+{
+    "ok": true,
+    "members": [
+        {
+            "id": "IDX1234",
+            "real_name": "admin",
+            "tz": "Asia/Calcutta",
+            "activity_periods": []
+        },
+        {
+            "id": "2IRK6OWKL",
+            "real_name": "Alyssa Lane",
+            "tz": "America/Dawson_Creek",
+            "activity_periods": [
+                {
+                    "start_time": "Sat 08 Aug 2020 02:01PM",
+                    "end_time": "Sat 08 Aug 2020 02:01PM"
+                },
+                {
+                    "start_time": "Sat 08 Aug 2020 02:01PM",
+                    "end_time": "Sat 08 Aug 2020 02:01PM"
+                },
+                {
+                    "start_time": "Sat 08 Aug 2020 02:01PM",
+                    "end_time": "Sat 08 Aug 2020 02:01PM"
+                }
+            ]
+        },
+        {
+            "id": "42NPUQ6T4",
+            "real_name": "Jonathan Ellis",
+            "tz": "GMT-0",
+            "activity_periods": [
+                {
+                    "start_time": "Sat 08 Aug 2020 02:01PM",
+                    "end_time": "Sat 08 Aug 2020 02:01PM"
+                },
+                {
+                    "start_time": "Sat 08 Aug 2020 02:01PM",
+                    "end_time": "Sat 08 Aug 2020 02:01PM"
+                },
+                {
+                    "start_time": "Sat 08 Aug 2020 02:01PM",
+                    "end_time": "Sat 08 Aug 2020 02:01PM"
+                }
+            ]
+        },
+}
+```
+
+
+* https://list-user-assignment.herokuapp.com/list_paginated_users/
 This endpoint provides a json response with pagination consisting of
 	* count
 		* Gives the total number of users including admin
@@ -141,9 +195,6 @@ This endpoint provides a json response with pagination consisting of
         },
 }
 ```
-* https://www.website.com/list_all_users/
-This endpoint provides a json response with the list of all users as the problem statement expects
-
 
 ## Default Username and Password
 When prompted , enter Username as admin 
