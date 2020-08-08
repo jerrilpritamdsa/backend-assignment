@@ -68,9 +68,9 @@ python manage.py createsuperuser
 ```
 enter Admin details such as
 * Username: admin
-* ID: admin
-* TZ(time-zone): Asia/Kolkata
-	* Asia/Kolkata is obtained from the pytz module `pytz.all_timezones`
+* ID: IDX1234
+* TZ(time-zone): Asia/Calcutta
+	* Asia/Calcutta is obtained from the pytz module `pytz.all_timezones`
 * Real name: admin
 * Password: admin
 
