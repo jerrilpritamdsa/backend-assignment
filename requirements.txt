@@ -1,0 +1,7 @@
+django
+django-rest-framework
+faker
+pytz
+ipdb
+python-decouple
+whitenoise
